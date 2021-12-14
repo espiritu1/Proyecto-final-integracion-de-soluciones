@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PeliculaService3", "PeliculaService3\PeliculaService3.csproj", "{0155B22F-5522-4C79-BCDB-A986ED9E7A3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{26CB468E-3E9F-433E-8A17-625A1339E1B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0155B22F-5522-4C79-BCDB-A986ED9E7A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0155B22F-5522-4C79-BCDB-A986ED9E7A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0155B22F-5522-4C79-BCDB-A986ED9E7A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0155B22F-5522-4C79-BCDB-A986ED9E7A3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F915DE6C-E3C0-464D-AB80-CC90EE3A5B3D}
+	EndGlobalSection
+EndGlobal

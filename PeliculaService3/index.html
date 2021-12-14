@@ -1,0 +1,121 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Peliculas REST</title>
+
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+    <script src="Scripts/app.js"></script>
+</head>
+<body>
+    <div class="container">
+
+
+        <div class="page-header">
+            <h1>Netflix</h1>
+        </div>
+
+        <div class="alert alert-danger"><p id="error"></p></div>
+
+        <div class="row">
+
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-titulo">Peliculas</h2>
+                    </div>
+                    <div class="panel-body">
+                        <ul id="peliculas" class="list-unstyled">
+                            <li>
+                                <input type="hidden" id="peliculaId">
+                                <strong>
+                                    <span class="DirectorNombre"></span>
+                                </strong>:
+                                <span class="Titulo"></span>
+                                <small><a href="#">Detalles</a></small>
+
+                                <button type="button" class="btn btn-default" id="borrar" >Borrar</button>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-title">detalles</h2>
+                    </div>
+                    <table class="table table-detalles">
+                        <tr><td>Director</td><td class="DirectorNombre"></td></tr>
+                        <tr><td>Titulo</td><td class="Titulo"></td></tr>
+                        <tr><td>Anio</td><td class="Anio"></td></tr>
+                        <tr><td>Genero</td><td class="Genero"></td></tr>
+                        <tr><td>Precio</td><td class="Precio"></td></tr>
+                    </table>
+                </div>
+
+            </div>
+
+            <div class="col-md-4">
+                
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h2 class="panel-Titulo">Add Pelicula</h2>
+                    </div>
+
+                    <div class="panel-body">
+                        <form class="form-horizontal" onsubmit="return addPelicula();">
+                            <div class="form-group">
+                                <label for="inputAuthor" class="col-sm-2 control-label">Director</label>
+                                <div class="col-sm-10">
+                                    <select id="DirectorId" class="form-control"></select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="inputTitulo" class="col-sm-2 control-label">Titulo</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputTitulo" />
+                                </div>
+
+                                <label for="inputAnio" class="col-sm-2 control-label">Anio</label>
+                                <div class="col-sm-10">
+                                    <input type="number" class="form-control" id="inputAnio" />
+                                </div>
+
+                                <label for="inputGenero" class="col-sm-2 control-label">Genero</label>
+                                <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="inputGenero" />
+                                </div>
+
+                                <label for="inputPrecio" class="col-sm-2 control-label">Precio</label>
+                                <div class="col-sm-10">
+                                    <input type="number" step="any" class="form-control" id="inputPrecio" />
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-default">Agregar</button>
+                            
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
